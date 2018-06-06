@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	p := argparse.NewParser("", "A utility to make sure the remote TCP port is reachable and listening")
+	p := argparse.NewParser("tcping", "A utility to make sure the remote TCP port is reachable and listening")
 
 	server := p.String("s", "server", &argparse.Options{Required: true, Help: "Remote server to check"})
 	port := p.Int("p", "port", &argparse.Options{Required: true, Help: "Remote port to check"})
